@@ -8,6 +8,8 @@
 	cm = commit -m
 	ca = commit --amend
 	aA = add -A
+	co = checkout 
+	cb = checkout -b
 	
 	# Show conflicted files
 	cfs = diff --name-only --diff-filter=U
