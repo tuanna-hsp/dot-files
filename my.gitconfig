@@ -16,3 +16,7 @@
 
 	# Beautifully display log graph
 	lgb = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+	# Stash all
+	sa = stash --include-untracked
+	
