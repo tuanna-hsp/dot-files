@@ -43,3 +43,6 @@ if has("mac") || has("macunix")
   vmap <D-j> <M-j>
   vmap <D-k> <M-k>
 endif
+
+" Using Enter as Esc
+:inoremap <CR> <Esc>
