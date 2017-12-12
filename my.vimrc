@@ -1,5 +1,6 @@
 " Show line number
 :set nu
+:set relativenumber
 
 " Search and replace in all text
 :nnoremap <C-h> ggVG$:s/
