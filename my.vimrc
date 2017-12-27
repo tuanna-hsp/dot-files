@@ -1,6 +1,8 @@
 " Show line number
 :set nu
-:set relativenumber
+
+" Good for navigating around with jk when your file is long, and you hate to type <line_number>G
+" :set relativenumber
 
 " Search and replace in all text
 :nnoremap <C-h> ggVG$:s/
