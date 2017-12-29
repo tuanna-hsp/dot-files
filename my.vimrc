@@ -1,16 +1,26 @@
+" ----------------
+"     SETTING
+" ----------------
+
 " Show line number
-:set nu
+set nu
 
 " Good for navigating around with jk when your file is long, and you hate to type <line_number>G
-" :set relativenumber
+" set relativenumber
 
-" Search and replace in all text
-:nnoremap <C-h> ggVG$:s/
-:inoremap <C-h> <Esc>ggVG$:s/
+" Set shiftwidth, which affects indenting commands
+set sw=4
 
-" Select all text in visual mode
-:nnoremap <C-a> ggVG$
-:inoremap <C-a> <Esc>ggVG$
+" Highlight search results
+set hlsearch
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
+" ----------------
+"     MAPPING
+" ----------------
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
@@ -19,13 +29,6 @@ let g:mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
-
-" Highlight search results
-set hlsearch
-
-" Configure backspace so it acts as it should act
-set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
@@ -47,14 +50,19 @@ if has("mac") || has("macunix")
   vmap <D-k> <M-k>
 endif
 
-" Using Enter as Esc
-:inoremap <CR> <Esc>
-
 " Quickly press jk or kj to exit insert mode
 inoremap jk <Esc>
 inoremap kj <Esc>
 
 " Use Enter or Ctrl-J to insert a line after current, or Ctrl-K to insert a line before
-:nnoremap <CR> o<Esc>k
-:nnoremap <C-J> m`o<Esc>``
-:nnoremap <C-K> m`O<E
+nnoremap <CR> o<Esc>k
+nnoremap <C-J> m`o<Esc>``
+nnoremap <C-K> m`O<Esc>``
+
+" Search and replace in all text
+nnoremap <C-h> ggVG$:s/
+inoremap <C-h> <Esc>ggVG$:s/
+
+" Select all text in visual mode
+nnoremap <C-a> ggVG$
+inoremap <C-a> <Esc>ggVG$
