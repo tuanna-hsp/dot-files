@@ -53,3 +53,8 @@ endif
 " Quickly press jk or kj to exit insert mode
 inoremap jk <Esc>
 inoremap kj <Esc>
+
+" Use Enter or Ctrl-J to insert a line after current, or Ctrl-K to insert a line before
+:nnoremap <CR> o<Esc>k
+:nnoremap <C-J> m`o<Esc>``
+:nnoremap <C-K> m`O<E
