@@ -8,8 +8,10 @@ set nu
 " Good for navigating around with jk when your file is long, and you hate to type <line_number>G
 " set relativenumber
 
-" Set shiftwidth, which affects indenting commands
+" Indenting with 4 spaces
+set tabstop=4
 set sw=4
+set expandtab
 
 " Highlight search results
 set hlsearch
