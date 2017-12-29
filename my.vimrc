@@ -49,3 +49,7 @@ endif
 
 " Using Enter as Esc
 :inoremap <CR> <Esc>
+
+" Quickly press jk or kj to exit insert mode
+inoremap jk <Esc>
+inoremap kj <Esc>
