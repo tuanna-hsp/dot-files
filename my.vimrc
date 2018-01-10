@@ -6,7 +6,7 @@
 set nu
 
 " Good for navigating around with jk when your file is long, and you hate to type <line_number>G
-" set relativenumber
+set relativenumber
 
 " Indenting with 4 spaces
 set tabstop=4
