@@ -62,8 +62,8 @@ nnoremap <C-J> m`o<Esc>``
 nnoremap <C-K> m`O<Esc>``
 
 " Search and replace in all text
-nnoremap <C-h> ggVG$:s/
-inoremap <C-h> <Esc>ggVG$:s/
+nnoremap <C-h> :%s/
+inoremap <C-h> <Esc>:%s/
 
 " Select all text in visual mode
 nnoremap <C-a> ggVG$
