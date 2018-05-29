@@ -24,4 +24,4 @@
 	sa = stash --include-untracked
 	
 	# Clean working tree and index (it's quite dangerous so I make the alias a bit longer)
-        clean_all = !git reset --hard HEAD && git clean -df
+        cleanall = "!git reset --hard HEAD;  git clean -df"
