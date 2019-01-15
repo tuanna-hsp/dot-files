@@ -61,6 +61,10 @@ nnoremap <CR> o<Esc>k
 nnoremap <C-J> m`o<Esc>``
 nnoremap <C-K> m`O<Esc>``
 
+" Make it easier to use register on device with Japanese keyboard layout
+nnoremap @ "
+nnoremap " @
+
 " Search and replace in all text
 nnoremap <C-h> :%s/
 inoremap <C-h> <Esc>:%s/
