@@ -1,5 +1,2 @@
-# my-config-files
-Config files for anything configurable.
-
-
-TODO: Create a shell script to deploy all configs.
+## TODO 
+- [ ] Write a shell script that deploy all configs.
